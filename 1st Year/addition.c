@@ -1,8 +1,10 @@
-#include<stdio.h>
-int main(){
+// SUM OF TWO NUMBERS
+#include<stdio.h> // Preprocessor Directive
+int main()
+{
     int n,m;
-    printf("enter 2 numbers \n");
-    scanf("%d %d", &n,&m);
-    printf("sum is %d",n+m);
+    printf("Enter 2 Numbers \n");
+    scanf("%d %d", &n,&m); // Taking Input From User
+    printf("Sum Of The Given 2 Numbers Is : %d",n+m); // Calculating & Printing The Output
     return 0;
 }
