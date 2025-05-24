@@ -3,6 +3,10 @@
 You are requested to not to roam here and there for code 🙃 
 just take your seat and click on the branches if you know how to use github 
 or else in the main branch i will be making folders for your ease :)
+
+for online running of codes 
+visit - https://ide.judge0.com/ 
+and copy and paste the code and run ✨
 ------------------------------------------------------------------------------------------
 ## HOW TO CLONE ##
 ------------------------------------------------------------------------------------------
