@@ -2,7 +2,7 @@
 
 // // A brute force approach can be sorting the entire array and then running the loop from n-2 to 0 the we will check whether arr[i] is not equals to largest and then we will store arr[i] as the second largest element in the array
 
-// //better code
+// //better code (Time complexity of N^2)
 
 // #include<bits/stdc++.h>
 // using namespace std;
