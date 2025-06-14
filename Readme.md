@@ -5,7 +5,6 @@
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/arkasnatapal/College" alt="Top Language">
   <img src="https://img.shields.io/github/last-commit/arkasnatapal/College" alt="Last Commit">
-  <img src="https://img.shields.io/github/license/arkasnatapal/College" alt="License">
 </p>
 
 <h1 align="center">📚 College – C++ DSA & College Code Collection</h1>
