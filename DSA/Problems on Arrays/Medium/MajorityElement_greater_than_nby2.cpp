@@ -32,4 +32,34 @@ return -1;
 
 here T.C. = O(NLogN) + O(N)    and S.C.= O(N)  
 
-Now lets talk about the Optimal Solution*/ 
+Now lets talk about the Optimal Solution [LEETCODE EDITION] (using MOORE'S VOTING ALGORITHM)*/ 
+ class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int size=nums.size();
+        int count=0;
+        int el;
+        for(int i=0;i<size;i++){
+            if(count==0){
+                count=1;
+                el= nums[i];
+            }
+            else if(nums[i]==el){
+                count++;
+            }
+            else{
+                count--;
+            }
+        }
+        int count1=0;
+        for(int i=0;i<size;i++){
+            if(nums[i]==el){
+                count1++;
+            }
+        }
+        if(count1 > size/2){
+            return el;
+        }
+        return -1;
+    }
+};
