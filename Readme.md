@@ -32,6 +32,7 @@
 - ✅ College lab assignments in both C and C++
 - ✅ Clean, readable, and beginner-friendly code
 - ✅ Continuously updated with new challenges and optimizations
+- ✅ With Handwritten notes of Striver A2Z DSA Course (to access it kindly download the Notes folder) it cannot be pulled in VS Code for Time Management 
 
 ---
 
