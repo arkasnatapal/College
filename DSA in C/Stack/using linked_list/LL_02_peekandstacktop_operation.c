@@ -6,7 +6,8 @@ struct Node{
     int data;
     struct Node *next;
 };
-int isEmpty(struct Node* top){
+
+int isEmpty(struct Node *top){
     if(top==NULL){
         return 1;
     }
@@ -26,51 +27,57 @@ int isFull(struct Node *top){
 }
 
 void LinkedListTraversal(struct Node *ptr){
-    while(ptr != NULL){
-        printf("Element is %d \n",ptr->data);
-        ptr =ptr->next;
-
+    while(ptr!=NULL){
+        printf("The element is %d \n",ptr->data);
+        ptr=ptr->next;
     }
 }
-
-struct Node* push(struct Node *top,int val){
+struct Node *push(struct Node *top,int val){
     if(isFull(top)){
-        printf("Stack Overflow can't add more values");
+        printf("Stack Overflow");
     }
     else{
-        struct Node *n=(struct Node*)malloc(sizeof(struct Node));
+        struct Node* n=(struct Node*)malloc(sizeof(struct Node));
         n->data=val;
         n->next=top;
         top=n;
         return top;
     }
+    
 }
 
+int peek(struct Node*top,int pos){
+    struct Node* ptr=top;
+    for(int i=0;(i<pos-1 && ptr!=NULL);i++){
+        ptr=ptr->next;
+    }
+    if(ptr!=NULL){
+        return ptr->data;
+    }
+    else{
+        return -1;
+    }
+}
 
 int pop(struct Node** top){
     if(isEmpty(*top)){
-printf("Stack Underflow");
+        printf("Stack Underflow");
     }
     else{
-        struct Node *n=*top;
-        *top=(*top)->next;.
+        struct Node* n=*top;
+        *top=(*top)->next;
         int x=n->data;
         n->next=*top;
         free(n);
         return x;
     }
 }
-
-
 int main(){
 struct Node *top=NULL;
-top = push(top,78);
-top = push(top,45);
-top = push(top,412);
-top = push(top,47);
-int Element;
-Element=pop(&top);
-printf("Popped element is %d \n",Element);
+top=push(top,56);
+top=push(top,14);
+top=push(top,66);
 LinkedListTraversal(top);
+printf("The element at idx 1 is %d \n",peek(top,1));
 return 0;
 }

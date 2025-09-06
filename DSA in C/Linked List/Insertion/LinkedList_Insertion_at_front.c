@@ -17,7 +17,7 @@ void LinkedListTraversal(struct Node *ptr){
 //New node creation that is to be inserted
 
 struct Node *InsertAtFirst(struct Node *head, int data){
-    struct Node *ptr; //we will assign a pointer 
+    struct Node *ptr; //we will assign a node 
     ptr=(struct Node *)malloc(sizeof(struct Node)); //allocate memory to the ptr 
     ptr->data=data; // this data will be given by the user
     ptr->next=head; // next ptr directing is towards the previous head
